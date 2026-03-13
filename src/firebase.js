@@ -2,14 +2,13 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-
 const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: ",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: "AIzaSyDkMFdEAMz28s1E4OjaGJuAW6MnyOT4mqU",
+  authDomain: "raviranjan-25.firebaseapp.com",
+  projectId: "raviranjan-25",
+  storageBucket: "raviranjan-25.firebasestorage.app",
+  messagingSenderId: "472581201850",
+  appId: "1:472581201850:web:d97fb01f28e86d235d4783"
 };
 
 // Init Firebase
