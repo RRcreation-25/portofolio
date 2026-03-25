@@ -36,6 +36,17 @@ function App() {
  
 
   useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://omnidim.io/web_widget.js?secret_key=a64870bbe045c4c4fb9af4b697e15235";
+    script.async = true;
+    script.id = "omnidimension-web-widget";
+
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
